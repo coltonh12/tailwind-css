@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Heading</h1>
-    <script src="index.js"></script>
-  </body>
+    <title>Dribbble Design with Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<div class="container mx-auto px-4 py-8">
+
+    <!-- Header -->
+    <header class="text-center py-8">
+        <h1 class="text-4xl font-bold text-blue-500">Discover Amazing Designs</h1>
+        <p class="text-lg text-gray-700">Explore the latest creations from talented designers</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex flex-wrap -mx-4">
+
+        <!-- Left Column -->
+        <div class="w-full md:w-1/2 px-4 mb-8">
+            <img src="your-image-url.jpg" class="w-full rounded-lg shadow-lg" alt="Design Image">
+        </div>
+
+        <!-- Right Column -->
+        <div class="w-full md:w-1/2 px-4 mb-8 flex flex-col justify-center">
+            <h2 class="text-2xl font-bold mb-4">Design Inspiration</h2>
+            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <p class="text-gray-700 mb-4">Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+            <a href="#" class="btn btn-primary">View More</a>
+        </div>
+
+    </div>
+
+    <!-- Call to Action -->
+    <section class="text-center py-8">
+        <h2 class="text-3xl font-bold text-blue-500">Ready to Explore?</h2>
+        <p class="text-lg text-gray-700">Join our community and start discovering amazing designs today!</p>
+        <a href="#" class="btn btn-primary mt-4">Join Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p class="text-gray-700">&copy; 2024 Your Website</p>
+    </footer>
+
+</div>
+
+</body>
 </html>
