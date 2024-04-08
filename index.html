@@ -3,63 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dribbble Design with Tailwind CSS</title>
+    <title>Dribbble Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Custom CSS */
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 4px;
-            text-decoration: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #0056b3;
-        }
-    </style>
 </head>
 <body class="bg-gray-100">
 
 <div class="container mx-auto px-4 py-8">
 
-    <!-- Header -->
-    <header class="text-center py-8">
-        <h1 class="text-4xl font-bold text-blue-500">Discover Amazing Designs</h1>
-        <p class="text-lg text-gray-700">Explore the latest creations from talented designers</p>
-    </header>
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center py-4">
+        <a href="#" class="text-lg font-semibold text-gray-900">Dribbble</a>
+        <ul class="flex space-x-8">
+            <li><a href="#" class="text-gray-900 hover:text-blue-500">Discover</a></li>
+            <li><a href="#" class="text-gray-900 hover:text-blue-500">Jobs</a></li>
+            <li><a href="#" class="text-gray-900 hover:text-blue-500">Hiring</a></li>
+            <li><a href="#" class="text-gray-900 hover:text-blue-500">Sign Up</a></li>
+            <li><a href="#" class="btn btn-primary">Sign In</a></li>
+        </ul>
+    </nav>
 
-    <!-- Main Content -->
-    <div class="flex flex-wrap -mx-4">
-
-        <!-- Left Column -->
-        <div class="w-full md:w-1/2 px-4 mb-8">
-            <img src="your-image-url.jpg" class="w-full rounded-lg shadow-lg" alt="Design Image">
+    <!-- Hero Section -->
+    <section class="hero flex justify-center items-center py-16">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Discover the World's Top Designers & Creative Professionals</h1>
+            <p class="text-lg text-gray-700 mb-8">Explore over 10 million inspiring projects and connect with designers worldwide.</p>
+            <a href="#" class="btn btn-primary">Join Dribbble</a>
         </div>
+    </section>
 
-        <!-- Right Column -->
-        <div class="w-full md:w-1/2 px-4 mb-8 flex flex-col justify-center">
-            <h2 class="text-2xl font-bold mb-4">Design Inspiration</h2>
-            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            <p class="text-gray-700 mb-4">Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
-            <a href="#" class="btn btn-primary">View More</a>
+    <!-- Features Section -->
+    <section class="features py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <i class="fas fa-pencil-alt text-4xl text-gray-900 mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Inspiring Designs</h3>
+                <p class="text-gray-700">Discover millions of designs created by talented professionals.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <i class="fas fa-users text-4xl text-gray-900 mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Connect & Collaborate</h3>
+                <p class="text-gray-700">Connect with designers worldwide and collaborate on projects.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <i class="fas fa-briefcase text-4xl text-gray-900 mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Find Jobs</h3>
+                <p class="text-gray-700">Discover job opportunities and advance your career.</p>
+            </div>
         </div>
+    </section>
 
-    </div>
-
-    <!-- Call to Action -->
-    <section class="text-center py-8">
-        <h2 class="text-3xl font-bold text-blue-500">Ready to Explore?</h2>
-        <p class="text-lg text-gray-700">Join our community and start discovering amazing designs today!</p>
-        <a href="#" class="btn btn-primary mt-4">Join Now</a>
+    <!-- Picture Section -->
+    <section class="picture-section py-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Replace the placeholder URLs with actual image URLs -->
+            <div><img src="your-image-url.jpg" alt="Image 1" class="w-full rounded-lg shadow-md"></div>
+            <div><img src="your-image-url.jpg" alt="Image 2" class="w-full rounded-lg shadow-md"></div>
+            <div><img src="your-image-url.jpg" alt="Image 3" class="w-full rounded-lg shadow-md"></div>
+            <div><img src="your-image-url.jpg" alt="Image 4" class="w-full rounded-lg shadow-md"></div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-4">
-        <p class="text-gray-700">&copy; 2024 Your Website</p>
+    <footer class="footer text-center py-8">
+        <p class="text-gray-700">&copy; 2024 Dribbble. All rights reserved.</p>
     </footer>
 
 </div>
